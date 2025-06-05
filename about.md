@@ -1,6 +1,8 @@
 ## ⚛️ Magnetic Moment Visualizer
 
-Welcome! This app helps you visualize **atomic magnetic moments** from your **DFT output files**.
+Please go to this link for the updated app: [dft-tools.streamlit.app](https://dft-tools.streamlit.app/) 
+
+This app helps you visualize **atomic magnetic moments** from your **DFT output files**.
 
 ### 🚀 **How to Use:**
 
