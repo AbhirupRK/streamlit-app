@@ -201,13 +201,13 @@ with main_col2:
                 for k, v in default_values.items():
                     if k != "atom_size":
                         st.session_state[k] = v
-                if st.session_state["atom_size"] <= default_values["atom_size"]:
-                    st.session_state["atom_size"] = st.session_state["atom_size"] + 0.0001
+                if st.session_state["atom_size"] == default_values["atom_size"]:
+                    st.session_state["atom_size"] = default_values["atom_size"] + 0.00001
                 else:
-                    st.session_state["atom_size"] = st.session_state["atom_size"] - 0.0001
-            
+                    st.session_state["atom_size"] = default_values["atom_size"]
+
             species_to_plot = st.multiselect("Show species", options=dft_output.data['species'], key="species_to_plot")
-        
+
         # Configuration options
         config_col1, config_col2, config_col3 = st.columns([7,7,10])
         with config_col1:
